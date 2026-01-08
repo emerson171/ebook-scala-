@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estratégias de Crescimento para Lojistas no E-commerce</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0d0d0d;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.badge {
+  background: #bfa14a;
+  color: #000;
+  display: inline-block;
+  padding: 6px 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+h1 span {
+  color: #bfa14a;
+}
+
+.sub {
+  font-size: 18px;
+  color: #ccc;
+  margin-top: 15px;
+}
+
+.timer-box {
+  background: #111;
+  border: 1px solid #bfa14a;
+  padding: 15px;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 6px;
+}
+
+.timer {
+  font-size: 28px;
+  color: #bfa14a;
+  font-weight: bold;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  color: #bfa14a;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #bfa14a;
+}
+
+.cta {
+  background: linear-gradient(135deg, #bfa14a, #e6c76b);
+  color: #000;
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+.cta h2 {
+  margin-bottom: 15px;
+}
+
+.cta a {
+  display: inline-block;
+  background: #000;
+  color: #bfa14a;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.cta a:hover {
+  opacity: 0.85;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-top: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="badge">GUIA PROFISSIONAL PARA LOJISTAS</div>
+
+  <h1>
+    Estratégias de Crescimento para  
+    <span>Lojistas no E-commerce</span>
+  </h1>
+
+  <p class="sub">
+    Descubra como escalar sua loja online, aumentar conversões e construir um e-commerce
+    lucrativo mesmo com pouco investimento.
+  </p>
+
+  <div class="timer-box">
+    Oferta especial expira em:
+    <div class="timer" id="timer">03:00</div>
+  </div>
+
+  <div class="section">
+    <h2>O que você vai aprender</h2>
+    <ul>
+      <li>Como atrair tráfego qualificado para sua loja</li>
+      <li>Estratégias para aumentar conversão sem baixar preço</li>
+      <li>Como criar ofertas que realmente vendem</li>
+      <li>Erros que fazem lojistas perderem dinheiro todos os dias</li>
+      <li>Processos simples para escalar vendas no e-commerce</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Para quem é este conteúdo</h2>
+    <ul>
+      <li>Lojistas iniciantes no e-commerce</li>
+      <li>Quem já vende, mas não consegue escalar</li>
+      <li>Quem quer profissionalizar sua loja online</li>
+      <li>Empreendedores que querem vender todos os dias</li>
+    </ul>
+  </div>
+
+  <div class="cta">
+    <h2>Acesso imediato ao material completo</h2>
+    <p>Conteúdo direto ao ponto, focado em crescimento real.</p>
+
+    <!-- 🔴 COLE SEU LINK DE VENDA AQUI -->
+    <a href="https://pay.kiwify.com.br/2f1BfdC">
+      Quero acessar agora
+    </a>
+  </div>
+
+  <div class="footer">
+    © 2026 – Conteúdo educacional | Resultados variam conforme aplicação
+  </div>
+
+</div>
+
+<script>
+let time = 180;
+
+const timer = setInterval(() => {
+  let minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+
+  document.getElementById("timer").innerHTML =
+    `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+  time--;
+
+  if (time < 0) {
+    clearInterval(timer);
+    document.getElementById("timer").innerHTML = "ENCERRADO";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
